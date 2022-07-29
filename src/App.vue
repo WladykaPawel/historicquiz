@@ -1,6 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="main">
+      <HelloWorld msg="Sprawdź swoją wiedzę Historyczną"/>
+      <div class="line"></div>
+      <h6 class="podpis">Created by <a href="https://github.com/WladykaPawel">@WladykaPawel</a></h6>
+  </div>
+
 </template>
 
 <script>
@@ -20,7 +24,33 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
+.main
+{
+  background: url("./assets/44.gif");
+  background-size: cover;
+  margin: 0;
+  padding-bottom: 50px;
+  min-height: 2000px;
+  padding-top: 50px;
+  font-family: "fantasy";
+}
+.line
+{
+  position: absolute;
+  top: 1950px;
+  left: 20px;
+  height: 5px;
+  width: 90vw;
+  background-color: gray;
+  margin-left: 4vw;
+}
+.podpis
+{
+  position: absolute;
+  top: 1955px;
+  left: 45vw
+}
+
 </style>
